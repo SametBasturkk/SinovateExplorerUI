@@ -1,0 +1,1141 @@
+@font-face {
+    font-family: 'MADE TOMMY';
+    src: url(../../assets/fonts/MADETOMMY-Light.woff2) format('woff2'), url(../../assets/fonts/MADETOMMY-Light.woff) format('woff');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'MADE TOMMY';
+    src: url(../../assets/fonts/MADETOMMY.woff2) format('woff2'), url(../../assets/fonts/MADETOMMY.woff) format('woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'MADE TOMMY';
+    src: url(../../assets/fonts/MADETOMMY-Medium.woff2) format('woff2'), url(../../assets/fonts/MADETOMMY-Medium.woff) format('woff');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'MADE TOMMY';
+    src: url(../../assets/fonts/MADETOMMY-Bold.woff2) format('woff2'), url(../../assets/fonts/MADETOMMY-Bold.woff) format('woff');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box
+}
+
+.search {
+    margin-top: 3px;
+    margin-left: 15px;
+}
+
+.openBtn {
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .9)
+}
+
+.overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin: auto
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: #fff
+}
+
+.overlay .closebtn:hover {
+    color: #ccc
+}
+
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: #fff
+}
+
+.backgroundGradient {
+    background: linear-gradient(180deg, #0013BF 0%, rgba(0, 19, 191, 0) 100%);
+    border-radius: 25px;
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 5vh;
+    height: 650px;
+}
+
+.sync {
+    background: #434343;
+    border-radius: 10px;
+    max-width: fit-content;
+    display: flex;
+    align-items: baseline;
+}
+
+.priceTable tr {
+    font-family: 'MADE TOMMY';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.flexDiv {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.nodeImg {
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.priceTable th {
+    font-family: 'MADE TOMMY';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.nodeType {
+    font-family: 'MADE TOMMY';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+
+.buildNode {
+    background: #424242;
+    box-shadow: 6px 6px 6px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+    font-family: 'MADE TOMMY';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+    width: 280px;
+    height: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.buildImg {
+    width: 35px;
+    margin-right: 15px;
+}
+
+.flexRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1vh;
+    max-width: 620px;
+}
+
+.align {
+    display: flex;
+}
+
+.rightStats {
+    font-family: 'MADE TOMMY';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.75);
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.rightStatsImg {
+    width: 45px;
+    height: 38px;
+}
+
+.nodeOutput {
+    font-family: 'MADE TOMMY';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-top: 0px;
+}
+
+.statsNode {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.backgroundBlack {
+    background: #1D1D1D;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    max-width: 620px;
+    height: 240px;
+    margin-top: 90px;
+}
+
+.searchBlock {
+    background: radial-gradient(83.31% 100.63% at 47.19% -0.63%, rgba(125, 125, 125, 0.075) 0%, rgba(0, 79, 255, 0.06) 100%);
+    border: 2px solid #0036AD;
+    border-radius: 10px;
+    width: 350px;
+    height: 30px;
+    margin-top: 8px;
+}
+
+.sinCoin {
+    font-family: 'MADE TOMMY';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.tableWidth {
+    max-width: 350px;
+    margin-top: 50px;
+}
+
+.marginButton {
+    margin-top: 20px;
+}
+
+.tableWidth tbody tr td {
+    text-align: right;
+}
+
+.sinTable {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.searchBlock::placeholder {
+    font-family: 'MADE TOMMY';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    color: #FFFFFF !important;
+    padding-left: 2vw;
+}
+
+.mainneth1 {
+    font-family: 'MADE TOMMY';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.syncP {
+    display: inline-block;
+    font-family: 'MADE TOMMY';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #A3A3A3;
+    margin: 0px;
+    padding: 5px;
+    margin-right: 8px;
+}
+
+.dot {
+    height: 11px;
+    width: 11px;
+    background: #006B1E;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 8px;
+}
+
+.overlay input[type=text]:hover {
+    background: #f1f1f1
+}
+
+.overlay button {
+    float: left;
+    width: 10%;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    height: 40px
+}
+
+.overlay button:hover {
+    background: #bbb
+}
+
+.fa.fa-search {
+    color: #000
+}
+
+.fa.fa-search:hover {
+    color: #ff7e24
+}
+
+#ticker {
+    color: rgba(255, 255, 255, 0.5);
+    max-width: fit-content;
+    display: inline-block;
+    font-family: 'MADE TOMMY';
+    font-size: 14px;
+    font-weight: 400
+}
+
+#statsoutput {
+    color: #fff;
+    font-family: 'MADE TOMMY';
+    font-size: 14px;
+    font-weight: 400;
+    max-width: fit-content;
+    display: inline-block;
+    margin-left: .5vw
+}
+
+#statsdiv {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    white-space: nowrap
+}
+
+#statsoutputnumber {
+    max-width: fit-content;
+    margin: auto;
+    white-space: nowrap
+}
+
+#nodediv {
+    background: #0e0e0e;
+    box-shadow: 0 4px 4px rgba(255, 255, 255, .1);
+    border-radius: 17px;
+    max-width: 350px;
+    margin: 45px auto auto;
+    max-height: 210px
+}
+
+#nodeimg {
+    margin-left: 2vw;
+    margin-top: 2vh;
+    display: inline-block
+}
+
+#nodehead {
+    color: rgba(255, 255, 255, .75);
+    font-weight: 700;
+    font-size: 24px;
+    font-family: 'MADE TOMMY';
+    max-width: fit-content;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 2vh;
+    padding-top: 1.2vh
+}
+
+.nodestatsnumber {
+    margin-left: 23px
+}
+
+span.heightnumber {
+    color: rgba(0, 79, 255, 0.8) !important;
+}
+
+.tablehead {
+    font-family: 'MADE TOMMY';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 147.5%;
+    color: rgba(255, 255, 255, .5);
+    padding: 0!important
+}
+
+td.tablehead.paddingtop {
+    padding-top: 5px !important;
+}
+
+.tableoutput {
+    font-family: 'MADE TOMMY';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    padding: 0!important
+}
+
+.tableoutput.percent {
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
+
+.table>:not(:first-child),
+.table>:not(caption)>*>* {
+    border: none
+}
+
+#mainsectiontwo {
+    max-width: 1400px;
+    margin: 65px auto auto;
+    overflow: hidden;
+}
+
+.contracts {
+    margin-top: 2vh;
+}
+
+.amountSIN {
+    font-family: MADE TOMMY;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.hashTransaction {
+    font-family: MADE TOMMY;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(0, 79, 255, 0.8) !important;
+}
+
+.hash {
+    font-family: 'MADE TOMMY';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 147.5%;
+    color: rgba(255, 255, 255, .5)
+}
+
+.blocksWidth {
+    max-width: auto;
+}
+
+h1.blockTransactions {
+    font-family: MADE TOMMY;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+.hashoutput {
+    font-family: 'MADE TOMMY';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: rgba(0, 79, 255, .8)
+}
+
+.date {
+    font-family: 'MADE TOMMY';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 147.5%;
+    color: rgba(255, 255, 255, .5)
+}
+
+.block {
+    font-family: MADE TOMMY;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 147.5%;
+    color: rgba(255, 255, 255, .5);
+    text-align: left
+}
+
+.sinoutput {
+    font-family: MADE TOMMY;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
+    color: white;
+}
+
+td.block {
+    width: 35%
+}
+
+th.trHead {
+    font-family: MADE TOMMY;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.marginbottom {
+    margin-bottom: 1vh
+}
+
+.blockshead:before {
+    content: "\200C";
+    display: block;
+    line-height: 2px;
+    text-indent: -99999px
+}
+
+#latestcontracts {
+    margin-top: 29px
+}
+
+.displayinline,
+.logoimg,
+.logotext,
+.status {
+    display: inline-block
+}
+
+#statuscontracts {
+    max-width: 135px;
+    margin-top: 4px;
+}
+
+.statuscontractp {
+    font-family: 'MADE TOMMY';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    color: #fff;
+    background: rgba(0, 79, 255, .1);
+    border: 1.3336px solid rgba(0, 79, 255, .5);
+    backdrop-filter: blur(56.0113px);
+    border-radius: 13.336px;
+    justify-content: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin: 0
+}
+
+.contract {
+    text-align: right
+}
+
+.big:before {
+    background-image: url(../../assets/img/biglogo-light%201.svg);
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    width: 45px;
+    height: 45px;
+    float: left;
+    margin: 0 6px 0 0
+}
+
+.med:before {
+    background-image: url(../../assets/img/midlogo-light%201.svg);
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    width: 45px;
+    height: 45px;
+    float: left;
+    margin: 0 6px 0 0
+}
+
+.mini:before {
+    background-image: url(../../assets/img/minilogo-light%201.svg);
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    width: 45px;
+    height: 45px;
+    float: left;
+    margin: 0 6px 0 0
+}
+
+.contracts {
+    margin-bottom: 2vh
+}
+
+.navwidth {
+    max-width: 1491px;
+    margin: auto
+}
+
+#outputcol {
+    max-width: fit-content
+}
+
+#nodestats {
+    max-width: 1250px;
+    margin: auto
+}
+
+.text-center {
+    border: 2px solid rgba(0, 79, 255, .5);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: 5px
+}
+
+.winner:after {
+    display: flex;
+    flex-direction: row;
+    font-family: MADE TOMMY;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    text-decoration-line: underline;
+    color: rgba(0, 79, 255, .8);
+    content: "Winner";
+    justify-content: center
+}
+
+.blockstext {
+    margin-bottom: 0
+}
+
+.transactions {
+    margin-bottom: 20px
+}
+
+.search-field {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 5px 35px;
+    border: 1px solid #0036AD;
+    -webkit-border-radius: 75px 0 0 75px/95px 95px 0;
+    border-radius: 10px;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: 0 0;
+    margin-right: -15px;
+    width: 235px;
+    background: url("/assets/img/search.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y: 8px;
+    background-position-x: 10px;
+}
+
+.nav-link {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.search-field::placeholder {
+    font-family: MADE TOMMY;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    margin-left: 30px;
+}
+
+.search-field::placeholder {
+    color: white;
+}
+
+input.search-field {
+    color: white !important;
+}
+
+.search-button {
+    font-size: 14px;
+    font-family: 'MADE TOMMY';
+    font-weight: normal;
+    box-sizing: content-box;
+    padding: 3px 15px;
+    border: 2px solid #012a87;
+    -webkit-border-radius: 0 75px 75px 0/95px 95px 75px;
+    border-radius: 75px;
+    color: #fff;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: #012a87;
+    -webkit-transition: .2s cubic-bezier(.42, 0, .58, 1);
+    -moz-transition: .2s cubic-bezier(.42, 0, .58, 1);
+    -o-transition: .2s cubic-bezier(.42, 0, .58, 1);
+    transition: .2s cubic-bezier(.42, 0, .58, 1);
+    margin-left: -25px;
+    width: 88px;
+    position: absolute;
+    top: 12px;
+}
+
+button {
+    border-radius: 0
+}
+
+button:focus:not(:focus-visible) {
+    outline: 0
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit
+}
+
+button,
+select {
+    text-transform: none
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+    -webkit-appearance: button
+}
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+    cursor: pointer
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+#sectionleft {
+    width: 250px;
+    float: left;
+    display: inline-block;
+    background: #101010;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#sectionright {
+    width: 1100px;
+    float: right;
+    display: inline-block
+}
+
+section#navbar {
+    margin-top: 16px;
+}
+
+body {
+    background-color: #000;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.logotext {
+    font-size: 24px;
+    margin-left: 25px
+}
+
+a {
+    color: rgba(0, 79, 255, 0.8) !important;
+}
+
+nav {
+    margin-top: 3vh;
+    background-color: transparent
+}
+
+.dflex {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: auto;
+}
+
+.nav-link {
+    font-family: MADE TOMMY;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF !important;
+    padding: 5px;
+}
+
+th.trHead.transactionTh.amountTh {
+    text-align: right;
+}
+
+.inputrecip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #0E0E0E;
+    box-shadow: 0px 4px 4px rgb(255 255 255 / 10%);
+    border-radius: 17px;
+    max-width: 225px;
+    margin: auto;
+}
+
+p.input {
+    font-family: MADE TOMMY;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #00B929;
+    text-transform: uppercase;
+    margin-top: 1vh;
+}
+
+p.output {
+    color: #CA0000;
+}
+
+.transactionTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-top: 2vh;
+}
+
+th.trHead.transactionTh {
+    font-family: MADE TOMMY;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+}
+
+#latesttransactions {
+    font-family: MADE TOMMY;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.transactionsWidth {
+    width: 1000px;
+}
+
+.transactionId {
+    font-family: MADE TOMMY;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+    margin-top: 20px;
+}
+
+.statstransactions {
+    font-family: MADE TOMMY;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.transactionHash {
+    font-family: MADE TOMMY;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+#navcol-1,
+.marginstats {
+    justify-content: space-between
+}
+
+.container-xxl {
+    max-width: 1900px!important
+}
+
+.navcenter {
+    margin-top: 0
+}
+
+button.search-button {
+    max-width: 50px
+}
+
+.bottomInfinity {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.bottomText {
+    margin-bottom: 0px;
+    font-family: MADE TOMMY;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    color: #CECECE;
+}
+
+a.nav-link.active {
+    background-image: url(../../assets/img/Rectangle%20290.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.maincontainer {
+    max-width: 100%
+}
+
+.sidebar {
+    height: 100vh
+}
+
+.statsicon {
+    display: block;
+    margin-left: auto;
+    height: 30px;
+    margin-right: auto
+}
+
+div#outputrow {
+    --bs-gutter-x: 2.5rem
+}
+
+::placeholder {
+    font-family: 'MADE TOMMY';
+    font-weight: normal;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.25);
+}
+
+#stats {
+    margin: 70px auto 55px auto;
+}
+
+.statsheader {
+    margin-bottom: 7px;
+    font-size: 14px;
+    color: #7f7f7f;
+    font-family: 'MADE TOMMY';
+    font-weight: 400;
+    margin-top: 2vh;
+    text-align: center;
+    text-transform: uppercase
+}
+
+.statsnumber {
+    font-weight: 500;
+    color: #fff;
+    font-family: 'MADE TOMMY';
+    font-size: 24px;
+    margin: auto;
+    display: inline-block;
+    text-align: center
+}
+
+.nodestatscol {
+    white-space: nowrap;
+}
+
+.ticker {
+    display: inline-block;
+    color: #004fff;
+    font-weight: 500;
+    font-family: 'MADE TOMMY';
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.showMore {
+    margin: auto 0px auto auto;
+    width: 180px;
+}
+
+.marginright {
+    margin-right: 1.5vw
+}
+
+.sidebarhead {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'MADE TOMMY';
+    font-weight: 700;
+    margin: 15px auto 15px auto;
+    max-width: fit-content;
+}
+
+.divTransactions {
+    background: #101010;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.transactions {
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+}
+
+.tableblocks tbody tr {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+}
+
+.tbodyMargin::before {
+    content: '';
+    display: block;
+    height: 25px;
+    background: black;
+}
+
+.tbodyback {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+}
+
+ul.navbar-nav.mx-auto {
+    max-width: fit-content;
+}
+
+td.timeOutput.blockout {
+    font-family: MADE TOMMY;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.blockout {
+    font-family: MADE TOMMY;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    padding: 10px;
+}
+
+th.hash.blockth {
+    text-align: left;
+}
+
+td.blockOutput.blockout {
+    text-align: left;
+}
+
+.blockth {
+    font-family: MADE TOMMY;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.navbar-nav {
+    margin-left: 56px;
+}
+
+div#outputrow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    max-width: fit-content;
+}
+
+.latestblock {
+    background: #0e0e0e;
+    box-shadow: 0 5px 2px rgba(255, 255, 255, .1);
+    border-radius: 15px
+}
+
+.tableblocks {
+    border-style: none!important;
+    border-color: transparent!important;
+    border-radius: 15px;
+    max-height: 83px!important;
+    margin-bottom: 22px
+}
+
+.navbar-expand-md .navbar-collapse {
+    display: flex;
+    justify-content: start !important;
+}
+
+.statscol {
+    width: 250px;
+    background: #0e0e0e;
+    box-shadow: 0 2px 2px rgba(255, 255, 255, .15);
+    border-radius: 15px
+}
